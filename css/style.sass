@@ -1,0 +1,175 @@
+@import "resets.scss"
+$main-red: #B31918
+*
+    border-radius: 0
+
+body
+    font-family: 'Roboto', sans-serif
+
+a
+    text-decoration: none
+    color: #333333
+.wrapper
+    width: 1060px
+    margin: 0 auto
+    padding: 0 16px 0 16px
+
+.header-black
+    font-weight: 700
+    font-size: 13px
+    line-height: 15px
+    background-color: #000000
+    width: 100vw
+    height: 43px
+    font-family: 'Roboto'
+    font-style: normal
+    color: #ffffff
+    &__container
+        display: flex
+        justify-content: space-between
+        align-items: center
+        height: 43px
+    &__location
+        display: flex
+        justify-content: center
+        gap: 30px
+    &__links
+        display: flex
+        gap: 20px
+        color: #ffffff
+
+
+.header
+    display: flex
+    justify-content: space-between
+    align-items: center
+    height: 80px
+    &__logo a
+        font-weight: 600
+        font-size: 30px
+        line-height: 48px
+        color: $main-red
+    &__navigation
+        font-weight: 700
+        font-size: 15px
+        line-height: 18px
+        display: flex
+        flex-direction: row
+        gap: 30px
+        &_red
+            color: $main-red
+    &__auth
+        font-weight: 700
+        font-size: 15px
+        line-height: 18px
+        background-color: #ffffff
+        border: .5px solid 
+        color: $main-red
+        padding: 9px 55px
+        cursor: pointer
+        transition-duration: 0.25s
+        &:hover
+            background-color: $main-red
+            color: white
+
+.section-1-1-container
+    height: 593px
+    background-image: url(../img/background-1.png)
+    background-size: cover
+
+.section-1-1
+    height: 593px
+    color: white
+    display: flex
+    justify-content: center
+    flex-direction: column
+    gap: 28px
+    &__title
+        font-weight: 700
+        font-size: 38px
+        line-height: 45px
+    &__desc
+        font-weight: 400
+        font-size: 16px
+        line-height: 19px
+    &__button
+        font-weight: 700
+        font-size: 16px
+        line-height: 19px
+        color: white
+        border: 0
+        background-color: $main-red
+        width: 300px
+        padding: 18px 0
+        cursor: pointer
+        transition-duration: 0.25s
+        &:hover
+            background-color: white
+            color: $main-red
+
+.section-1-2
+    display: flex
+    flex-direction: row
+    width: 99.1vw
+    height: 240px
+    font-weight: 700
+    font-size: 18px
+    line-height: 124.1%
+    color: white
+    margin-bottom: 104px
+    &__button
+        font-weight: 500
+        font-size: 14px
+        line-height: 16px
+        color: white
+        border: 0
+        background-color: $main-red
+        width: 216px
+        padding: 10px 0
+        cursor: pointer
+        transition-duration: 0.25s
+        margin-bottom: 10px
+        &:hover
+            background-color: white
+            color: $main-red
+    &__container-1
+        background-image: url(../img/ad_card-1.png)
+        background-size: cover
+        padding: 30px
+        width: 25%
+    &__container-2
+        background-image: url(../img/ad_card-2.png)
+        background-size: cover
+        padding: 30px
+        width: 25%
+    &__container-3
+        background-image: url(../img/ad_card-3.png)
+        background-size: cover
+        padding: 30px
+        width: 25%
+    &__container-4
+        background-image: url(../img/ad_card-4.png)
+        background-size: cover
+        padding: 30px
+        width: 25%
+
+.section-2-title
+    margin-bottom: 57px
+
+.section-2-news
+    height: 400px
+    width: 100%
+    display: flex
+    gap: 20px
+    &__block-1
+        height: 340px
+        width: 302px
+    &__date-1
+        height: 126px
+        width: 60px
+    &__block-2
+        height: 340px
+        width: 302px
+    &__block-3
+        height: 340px
+        width: 302px
