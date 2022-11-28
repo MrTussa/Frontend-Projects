@@ -380,3 +380,21 @@ a {
   font-size: 30px;
   line-height: 35px;
 }
+
+.section-3__title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 35px;
+  margin-bottom: 40px;
+}
+
+.section-3__desc {
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 30px;
+  margin-bottom: 70px;
+}
+
+.section-3__desc span {
+  color: #B31918;
+}
