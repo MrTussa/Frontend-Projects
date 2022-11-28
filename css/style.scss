@@ -243,26 +243,53 @@ a {
   }
 }
 
-.section-2-title {
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 35px;
-}
-
-.section-3__title {
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 35px;
-  margin-bottom: 40px;
-}
-
-.section-3__desc {
-  font-weight: 400;
-  font-size: 26px;
-  line-height: 30px;
-  margin-bottom: 70px;
-}
-
-.section-3__desc span{
-  color:$main-red;
+.section-3 {
+  &__title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+    margin-bottom: 40px;
+  }
+  &__desc {
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 30px;
+    margin-bottom: 70px;
+  }
+  &__desc span{
+    color:$main-red;
+  }
+  &__formats-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  }
+  &__formats {
+    width: 520px;
+    height: 500px;
+    padding: 0px 40px;
+  }
+  &__formats-title {
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 30px;
+    margin-bottom: 25px;
+  }
+  &__formats-desc {
+    margin-bottom: 31px;
+  }
+  &__formats-desc li {
+    margin-bottom: 18px;
+  }
+  &__formats-desc li:last-child {
+    margin-bottom: 0px;
+  }
+  &__formats-desc li::before {
+    content: "\2022";
+    color:$main-red ;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
 }

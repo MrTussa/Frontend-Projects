@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -375,26 +376,56 @@ a {
   line-height: 22px;
 }
 
-.section-2-title {
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 35px;
-}
-
 .section-3__title {
   font-weight: 700;
   font-size: 30px;
   line-height: 35px;
   margin-bottom: 40px;
 }
-
 .section-3__desc {
   font-weight: 400;
   font-size: 26px;
   line-height: 30px;
   margin-bottom: 70px;
 }
-
 .section-3__desc span {
   color: #B31918;
+}
+.section-3__formats-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+.section-3__formats {
+  width: 520px;
+  height: 500px;
+  padding: 0px 40px;
+}
+.section-3__formats-title {
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 30px;
+  margin-bottom: 25px;
+}
+.section-3__formats-desc {
+  margin-bottom: 31px;
+}
+.section-3__formats-desc li {
+  margin-bottom: 18px;
+}
+.section-3__formats-desc li:last-child {
+  margin-bottom: 0px;
+}
+.section-3__formats-desc li::before {
+  content: "•";
+  color: #B31918;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
 }
