@@ -308,6 +308,9 @@ a {
 .section-3__desc span {
   color: #B31918;
 }
+.section-3__format {
+  margin-bottom: 50px;
+}
 .section-3__formats-container {
   display: flex;
   flex-direction: column;
@@ -321,13 +324,13 @@ a {
 .section-3__formats-container-1-1 {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 20px;
 }
 .section-3__formats {
-  width: 520px;
-  height: 500px;
+  width: 490px;
+  padding: 30px;
   background-image: url(../img/format-bg-1.png);
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   color: white;
   display: flex;
@@ -341,6 +344,7 @@ a {
   margin-bottom: 25px;
 }
 .section-3__formats-desc {
+  padding-left: 20px;
   margin-bottom: 31px;
 }
 .section-3__formats-desc li {
@@ -355,11 +359,45 @@ a {
 }
 .section-3__card {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex-direction: column;
-  width: 520px;
-  height: 240px;
+  width: 440px;
+  height: 160px;
+  padding: 40px;
+  color: white;
+}
+.section-3__formats-title {
+  margin-bottom: 40px;
 }
 .section-3__training {
   background-image: url(../img/format-bg-2.png);
+  background-size: cover;
+}
+.section-3__seminars {
+  background-image: url(../img/format-bg-3.png);
+  background-size: cover;
+}
+.section-3__vebinars {
+  background-image: url(../img/format-bg-3.png);
+  background-size: cover;
+}
+.section-3__consultation {
+  background-image: url(../img/format-bg-5.png);
+  background-size: cover;
+}
+.section-3__formats-container-2 {
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+}
+.section-3__end-button-pos {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 140px;
+}
+.section-3__end-button {
+  width: 300px;
+  padding: 20px;
+  background: #B31918;
+  border: 2px solid #CE3434;
 }/*# sourceMappingURL=style.css.map */
