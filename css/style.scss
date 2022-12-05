@@ -1,5 +1,7 @@
 @import "resets.scss";
 $main-red: #B31918;
+$main-black: #000000;
+$font-big: 700;
 * {
   border-radius: 0;
 }
@@ -16,10 +18,10 @@ a {
   padding: 0 16px 0 16px;
 }
 .header-black {
-  font-weight: 700;
+  font-weight: $font-big;
   font-size: 13px;
   line-height: 15px;
-  background-color: #000000;
+  background-color: $main-black;
   width: 100vw;
   height: 43px;
   font-family: 'Roboto';
@@ -65,7 +67,7 @@ a {
     }
   }
   &__auth {
-    font-weight: 700;
+    font-weight: $font-big;
     font-size: 15px;
     line-height: 18px;
     background-color: #ffffff;
@@ -93,7 +95,7 @@ a {
   flex-direction: column;
   gap: 28px;
   &__title {
-    font-weight: 700;
+    font-weight: $font-big;
     font-size: 38px;
     line-height: 45px;
   }
@@ -103,20 +105,23 @@ a {
     line-height: 19px;
   }
   &__button {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 19px;
-    color: white;
-    border: 0;
-    background-color: $main-red;
     width: 300px;
     padding: 18px 0;
-    cursor: pointer;
-    transition-duration: 0.25s;
-    &:hover {
-      background-color: white;
-      color: $main-red;
-    }
+  }
+}
+
+.button-structure {
+  font-weight: $font-big;
+  font-size: 16px;
+  line-height: 19px;
+  color: white;
+  border: 0;
+  background-color: $main-red;
+  cursor: pointer;
+  transition-duration: 0.25s;
+  &:hover {
+    background-color: white;
+    color: $main-red;
   }
 }
 .section-1-2 {
@@ -124,27 +129,14 @@ a {
   flex-direction: row;
   width: 99.1vw;
   height: 240px;
-  font-weight: 700;
+  font-weight: $font-big;
   font-size: 18px;
   line-height: 124.1%;
   color: white;
   margin-bottom: 104px;
   &__button {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    color: white;
-    border: 0;
-    background-color: $main-red;
     width: 216px;
     padding: 10px 0;
-    cursor: pointer;
-    transition-duration: 0.25s;
-    margin-bottom: 10px;
-    &:hover {
-      background-color: white;
-      color: $main-red;
-    }
   }
   &__container-1 {
     background-image: url(../img/promotion_card-1.png);
@@ -220,7 +212,7 @@ a {
     height: 60px;
     background: #F4F5F5;
     box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.1);
-    font-weight: 700;
+    font-weight: $font-big;
     font-size: 16px;
     line-height: 19px;
     display: flex;
@@ -231,7 +223,7 @@ a {
     color: #FFFFFF;
   }
   &__title {
-    font-weight: 700;
+    font-weight: $font-big;
     font-size: 20px;
     line-height: 23px;
     margin-bottom: 5px;
@@ -245,7 +237,7 @@ a {
 
 .section-3 {
   &__title {
-    font-weight: 700;
+    font-weight: $font-big;
     font-size: 30px;
     line-height: 35px;
     margin-bottom: 40px;
@@ -260,16 +252,26 @@ a {
     color:$main-red;
   }
   &__formats-container {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  &__formats-container-1 {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  &__formats-container-1-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
   }
   &__formats {
     width: 520px;
     height: 500px;
-    padding: 0px 40px;
+
     background-image: url(../img/format-bg-1.png);
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     color: white;
     display: flex;
@@ -291,12 +293,19 @@ a {
   &__formats-desc li:last-child {
     margin-bottom: 0px;
   }
-  &__formats-desc li::before {
-    content: "\2022";
-    color:$main-red ;
-    font-weight: bold;
-    display: inline-block;
-    width: 1em;
-    margin-left: -1em;
+  &__button {
+    width: 180px;
+    padding: 10px;
+  }
+  &__card {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 520px;
+    height: 240px;
+    
+  }
+  &__training {
+    background-image: url(../img/format-bg-2.png);
   }
 }
