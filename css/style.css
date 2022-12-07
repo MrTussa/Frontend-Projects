@@ -225,6 +225,10 @@ h3 {
   color: #B31918;
 }
 
+.button-structure:hover path {
+  fill: #575757;
+}
+
 .section-1-2 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -290,21 +294,20 @@ h3 {
           justify-content: space-between;
 }
 
+.section-title__button {
+  width: 20px;
+  height: 20px;
+}
+
 .section-title__button-1 {
-  background-image: url(../icons/Button-left.svg);
-  background-repeat: no-repeat;
-  background-position: center;
   background-color: #c4c4c4;
   border-radius: 4px;
-  padding: 20px;
+  padding: 10px 6px 6px 10px;
 }
 
 .section-title__button-2 {
-  background-image: url(../icons/Button-right.svg);
-  background-repeat: no-repeat;
-  background-position: center;
   border-radius: 4px;
-  padding: 20px;
+  padding: 10px 6px 6px 10px;
 }
 
 .section-2-news {
@@ -648,8 +651,57 @@ h3 {
   background-size: cover;
   background-position: center;
   color: white;
-  width: 340px;
   height: 428px;
   padding: 40px 25px;
+}
+
+.section-4__name {
+  font-size: 28px;
+  line-height: 33px;
+}
+
+.section-4__desc {
+  line-height: 23px;
+  font-size: 20px;
+}
+
+.section-5__students {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.section-5__student {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  background-image: url(../img/student.png);
+  background-size: cover;
+  padding: 18px;
+  width: 100%;
+  height: 396px;
+}
+
+.section-5__name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #ffffff;
+  width: 100%;
+  height: 47px;
 }
 /*# sourceMappingURL=style.css.map */
