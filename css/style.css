@@ -69,8 +69,12 @@ h1, h2, h3 {
   font-weight: 700;
 }
 
+h2 {
+  font-size: 30px;
+}
+
 .wrapper {
-  width: 1060px;
+  max-width: 1060px;
   margin: 0 auto;
   padding: 0 16px 0 16px;
 }
@@ -186,6 +190,7 @@ h1, h2, h3 {
 }
 
 .directions {
+  position: relative;
   display: flex;
   flex-direction: row;
   width: 99.1vw;
@@ -199,29 +204,23 @@ h1, h2, h3 {
   width: 216px;
   padding: 10px 0;
 }
-.directions__container-1 {
+.directions__container {
+  background-size: cover;
+  padding: 30px;
+  width: 25%;
+  min-width: 360px;
+}
+.directions__bg-1 {
   background-image: url(../img/promotion_card-1.png);
-  background-size: cover;
-  padding: 30px;
-  width: 25%;
 }
-.directions__container-2 {
+.directions__bg-2 {
   background-image: url(../img/promotion_card-2.png);
-  background-size: cover;
-  padding: 30px;
-  width: 25%;
 }
-.directions__container-3 {
+.directions__bg-3 {
   background-image: url(../img/promotion_card-3.png);
-  background-size: cover;
-  padding: 30px;
-  width: 25%;
 }
-.directions__container-4 {
+.directions__bg-4 {
   background-image: url(../img/promotion_card-4.png);
-  background-size: cover;
-  padding: 30px;
-  width: 25%;
 }
 
 .section-2 {
@@ -408,11 +407,12 @@ h1, h2, h3 {
   gap: 5px;
   justify-content: flex-end;
   color: white;
-  width: 340px;
+  width: 100%;
   height: 428px;
 }
 .section-4__teacher-photo {
   position: absolute;
+  width: 100%;
 }
 .section-4__teacher-about {
   position: relative;
@@ -463,8 +463,10 @@ h1, h2, h3 {
 }
 .section-5__photo {
   position: absolute;
+  width: 100%;
 }
 .section-5__student {
+  position: relative;
   display: flex;
   align-items: flex-end;
   width: 100%;
@@ -476,18 +478,15 @@ h1, h2, h3 {
   padding: 18px;
   position: relative;
   width: 90%;
-  height: 90%;
 }
 .section-5__student a {
   position: relative;
 }
 .section-5__name {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  text-align: center;
   background-color: #ffffff;
   width: 100%;
-  height: 47px;
+  padding: 20px 0;
 }
 
 .section-6 {
@@ -558,6 +557,7 @@ h1, h2, h3 {
   margin-bottom: 40px;
 }
 .section-8__companies {
+  justify-content: center;
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
@@ -588,7 +588,7 @@ h1, h2, h3 {
   gap: 65px;
 }
 .section-9__mailing-list {
-  width: 100%;
+  width: 30%;
   display: flex;
   flex-direction: column;
   gap: 25px;
@@ -609,6 +609,11 @@ h1, h2, h3 {
 .section-9__button span {
   font-weight: 700;
   color: #B31918;
+}
+.section-9__content-container {
+  width: 70%;
+  display: flex;
+  gap: 30px;
 }
 .section-9__cards-container {
   width: 100%;
@@ -655,9 +660,7 @@ h1, h2, h3 {
   line-height: 21px;
 }
 .section-10__about-title {
-  font-weight: 700;
   font-size: 24px;
-  line-height: 28px;
   margin-bottom: 26px;
 }
 .section-10__form {
@@ -700,6 +703,9 @@ h1, h2, h3 {
   line-height: 21px;
 }
 
+.section-11 {
+  margin-bottom: 100px;
+}
 .section-11__contacts {
   display: flex;
   justify-content: center;
@@ -713,4 +719,58 @@ h1, h2, h3 {
 }
 .section-11__map {
   border-radius: 20px;
+}
+
+.footer {
+  background-color: #000000;
+  color: white;
+}
+.footer__container {
+  padding: 110px 0 50px 0;
+}
+.footer__main-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+.footer__title {
+  margin-bottom: 40px;
+}
+.footer__adress {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.footer__nav {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.footer__link {
+  color: white;
+}
+.footer__company {
+  text-align: center;
+}
+
+@media screen and (max-width: 1090px) {
+  .wrapper {
+    max-width: 900px;
+  }
+  .section-4__teacher {
+    height: 350px;
+  }
+  .section-5__student {
+    height: 320px;
+  }
+  .section-9__container {
+    flex-direction: column;
+    gap: 25px;
+  }
+  .section-9__mailing-list {
+    width: 100%;
+  }
+  .section-9__content-container {
+    width: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */

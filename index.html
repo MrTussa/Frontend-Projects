@@ -30,12 +30,14 @@
         <nav class="wrapper">
             <div class="header">
                 <div class="header__logo"><a href="#">Аврора</a></div>
-                <ul class="header__navigation">
-                    <li><a href="#" class="header__navigation_red">Направления</a></li>
-                    <li><a href="#formats">Форматы обучения</a></li>
-                    <li><a href="#teachers">Спикеры</a></li>
-                    <li><a href="#student-review">Отзывы</a></li>
-                </ul>
+                <nav>
+                    <ul class="header__navigation">
+                        <li><a href="#" class="header__navigation_red">Направления</a></li>
+                        <li><a href="#formats">Форматы обучения</a></li>
+                        <li><a href="#teachers">Спикеры</a></li>
+                        <li><a href="#student-review">Отзывы</a></li>
+                    </ul>
+                </nav>
                 <button class="header__auth">Войти</button>
             </div>
         </nav>
@@ -52,19 +54,20 @@
                 </div>
             </div>
             <div class="directions">
-                <div class="directions__container-1">
+                <!-- TODO: add slider -->
+                <div class="directions__container directions__bg-1">
                     <button class="directions__button button-structure">Ивестиции и трейдинг</button>
                     <h3>Грамотное распределение денежных cредств и увеличение оборотов компании</h3>
                 </div>
-                <div class="directions__container-2">
+                <div class="directions__container directions__bg-2">
                     <button class="directions__button button-structure">Экономика и финансы</button>
                     <h3>Новые экономические модели для максимального оборота и роста компаний </h3>
                 </div>
-                <div class="directions__container-3">
+                <div class="directions__container directions__bg-3">
                     <button class="directions__button button-structure">Кибербезопасноть и IT</button>
                     <h3>Корпоративная безопасность и эффективная работа с базами данных</h3>
                 </div>
-                <div class="directions__container-4">
+                <div class="directions__container directions__bg-4">
                     <button class="directions__button button-structure">Оперативное управление</button>
                     <h3>Современные методики управленческих решений для владельцев компаний</h3>
                 </div>
@@ -339,52 +342,54 @@
                         <p>Подпишитесь, чтобы получать информацию о самых интересных событиях, новых товарах и выгодных предложениях.</p>
                         <a href="#" class="section-9__button"><span>Рассылка</span></a>
                     </div>
-                    <div class="section-9__cards-container">
-                        <h3 class="section-9__title">Ближайшие события</h3>
-                        <div class="section-9__card">
-                            <img src="img/ivent-1.png" alt="">
-                            <div class="section-9__about">
-                                <h3>Встреча с читателями</h3>
-                                <span>4 ноября 2021, Воскресенье</span>
+                    <div class="section-9__content-container">
+                        <div class="section-9__cards-container">
+                            <h3 class="section-9__title">Ближайшие события</h3>
+                            <div class="section-9__card">
+                                <img src="img/ivent-1.png" alt="">
+                                <div class="section-9__about">
+                                    <h3>Встреча с читателями</h3>
+                                    <span>4 ноября 2021, Воскресенье</span>
+                                </div>
+                            </div>
+                            <div class="section-9__card">
+                                <img src="img/ivent-2.png" alt="">
+                                <div class="section-9__about">
+                                    <h3>10-ый форум директоров:
+                                        “Стратегия. Взгляд в будущее российских бизнесов”</h3>
+                                    <span>16 ноября 2021, Воскресенье</span>
+                                </div>
+                            </div>
+                            <div class="section-9__card">
+                                <img src="img/ivent-3.png" alt="">
+                                <div class="section-9__about">
+                                    <h3>“Мир входит в катастрофу. Что делать и чего ждать каждому из нас”</h3>
+                                    <span>24 ноября 2021, Воскресенье</span>
+                                </div>
                             </div>
                         </div>
-                        <div class="section-9__card">
-                            <img src="img/ivent-2.png" alt="">
-                            <div class="section-9__about">
-                                <h3>10-ый форум директоров:
-                                    “Стратегия. Взгляд в будущее российских бизнесов”</h3>
-                                <span>16 ноября 2021, Воскресенье</span>
+                        <div class="section-9__cards-container">
+                            <h3 class="section-9__title title">Направления</h3>
+                            <div class="section-9__card">
+                                <img src="img/direction-1.png" alt="">
+                                <div class="section-9__about">
+                                    <h3>Инвестиции и трейдинг</h3>
+                                    <p>Грамотное распределение денежных средств и увеличение оборотов компании</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="section-9__card">
-                            <img src="img/ivent-3.png" alt="">
-                            <div class="section-9__about">
-                                <h3>“Мир входит в катастрофу. Что делать и чего ждать каждому из нас”</h3>
-                                <span>24 ноября 2021, Воскресенье</span>
+                            <div class="section-9__card">
+                                <img src="img/direction-2.png" alt="">
+                                <div class="section-9__about">
+                                    <h3>Экономика и финансы</h3>
+                                    <p>Новые экономические модели для максимального оборота и роста компаний </p>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="section-9__cards-container">
-                        <h3 class="section-9__title title">Направления</h3>
-                        <div class="section-9__card">
-                            <img src="img/direction-1.png" alt="">
-                            <div class="section-9__about">
-                                <h3>Инвестиции и трейдинг</h3>
-                                <p>Грамотное распределение денежных средств и увеличение оборотов компании</p>
-                            </div>
-                        </div>
-                        <div class="section-9__card">
-                            <img src="img/direction-2.png" alt="">
-                            <div class="section-9__about">
-                                <h3>Экономика и финансы</h3>
-                                <p>Новые экономические модели для максимального оборота и роста компаний </p>
-                            </div>
-                        </div>
-                        <div class="section-9__card">
-                            <img src="img/direction-3.png" alt="">
-                            <div class="section-9__about">
-                                <h3>Кибербезопасность и IT</h3>
-                                <p>Корпоративная безопасность и эффективная работа с базами данных</p>
+                            <div class="section-9__card">
+                                <img src="img/direction-3.png" alt="">
+                                <div class="section-9__about">
+                                    <h3>Кибербезопасность и IT</h3>
+                                    <p>Корпоративная безопасность и эффективная работа с базами данных</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -433,10 +438,43 @@
             </div>
         </section>
     </main>
-    <footer>
+    <footer class="footer">
         <div class="wrapper">
-            <div class="container">
-
+            <div class="footer__container">
+                <div class="footer__main-container">
+                    <div class="footer__left">
+                        <div class="footer__title">
+                            <h3>ООО «Аврора»</h3>
+                        </div>
+                        <div class="footer__adress">
+                            <h4>ИНН: 9701131008 </h4>
+                            <h4>ОГРН: 1197746243441 </h4>
+                            <h4>Адрес: г. Москва, ул. Макаренко, 2/21 стр. 2</h4>
+                        </div>
+                    </div>
+                    <div class="footer__right">
+                        <ul class="footer__nav">
+                            <li>
+                                <a href="#" class="footer__link">Оферта</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer__link">Тарифы</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer__link">Отменить подписку</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer__link">Политика конфиденциальности</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer__link">Правила использования платформы</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__company">
+                    <p>Образовательная платформа «Аврора»</p>
+                </div>
             </div>
         </div>
     </footer>
